@@ -1,2 +1,2 @@
-# Terraform-GitHub-Automation
-#Terraform Automation Using GitHub Actions
+# Terraform Automation Using GitHub Actions
+Terraform-GitHub-Automation
