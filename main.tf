@@ -26,7 +26,6 @@ provider "aws" {
 }
 
 
-
 resource "random_pet" "sg" {}
 
 resource "aws_instance" "web" {
@@ -36,7 +35,8 @@ resource "aws_instance" "web" {
 
   user_data = <<-EOF
               #!/bin/bash
-              echo "Hello, World" > index.html
+              echo "<center><h1 style="color:green;font-size:200%;">Hello, Welcome to my World</h1></center>" > index.html
+              echo "<center><h1 style="color:red;font-size:150%;">You are see this because I want you to</h1></center>" > index.html
               nohup busybox httpd -f -p 8080 &
               EOF
 }
